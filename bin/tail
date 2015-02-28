@@ -1,0 +1,3 @@
+#!/bin/zsh
+
+ssh -t -i ../.aws/island.pem ec2-user@54.174.107.121 "tail -f /var/log/nodejs/nodejs.log $1"

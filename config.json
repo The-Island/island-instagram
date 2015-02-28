@@ -1,0 +1,8 @@
+{
+  "INSTAGRAM_CLIENT_ID": "b6e0d7d608a14a578cf94763f70f1b49",
+  "INSTAGRAM_CLIENT_SECRET": "a3937ee32072457d92eaa2165bd7dd37",
+  "INSTAGRAM_VERIFY_TOKEN": "weareinstaisland",
+  "INSTAGRAM_CALLBACK_URL": "https://island.ngrok.com/api/instagrams",
+  "INSTAGRAM_TAGS": ["weareisland", "islandio"],
+  "INSTAGRAM_USERS": ["island_io", "island.io"]
+}

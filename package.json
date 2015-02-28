@@ -1,0 +1,26 @@
+{
+  "private": true,
+  "author": "The Island (git://github.com/The-Island)",
+  "name": "island-instagram",
+  "version": "0.0.1",
+  "port": 1337,
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/The-Island/island-instagram.git"
+  },
+  "dependencies": {
+    "island-worker": "git+https://island-ebs:i51andghebs@github.com/The-Island/island-worker.git#develop",
+    "island-util": "git+https://island-ebs:i51andghebs@github.com/The-Island/island-util.git#develop",
+    "underscore": "^1.4.4",
+    "underscore.string": "~2.3.1",
+    "step": "0.0.5",
+    "request": "^2.40.0",
+    "instagram-node-lib": "^0.1.1"
+  },
+  "engines": {
+    "node": "~0.10.31"
+  },
+  "scripts": {
+    "start": "./start.js"
+  }
+}
