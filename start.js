@@ -27,7 +27,7 @@ worker.start({
     });
 
     // Subscribe to our tags.
-    // _.each(config.INSTAGRAM_TAGS, function (tag) {
+    // _.each(config.INSTAGRAM_TAGS.split(':'), function (tag) {
     //   Instagram.subscriptions.subscribe({
     //     object: 'tag',
     //     object_id: tag,

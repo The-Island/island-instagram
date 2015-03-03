@@ -4,6 +4,6 @@
   "INSTAGRAM_VERIFY_TOKEN": "weareinstaisland",
   "INSTAGRAM_USER_CALLBACK_URL": "https://island.ngrok.com/api/instagrams/users",
   "INSTAGRAM_TAG_CALLBACK_URL": "https://island.ngrok.com/api/instagrams/tags",
-  "INSTAGRAM_TAGS": ["weareisland", "islandio"],
+  "INSTAGRAM_TAGS": "weareisland:islandio",
   "INSTAGRAM_USER": "island_io"
 }
