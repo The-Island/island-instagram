@@ -7,8 +7,12 @@ var Step = require('step');
 var _ = require('underscore');
 _.mixin(require('underscore.string'));
 var pack = require('./package.json');
-var config = require('./config.json');
 var Instagram = require('instagram-node-lib');
+
+var config = {};
+_.each(require('./config.json'), function (v, k) {
+  config[k] = process.env[k] || v;
+});
 
 Instagram.set('client_id', config.INSTAGRAM_CLIENT_ID);
 Instagram.set('client_secret', config.INSTAGRAM_CLIENT_SECRET);
@@ -25,17 +29,6 @@ worker.start({
       callback_url: config.INSTAGRAM_USER_CALLBACK_URL,
       verify_token: config.INSTAGRAM_VERIFY_TOKEN
     });
-
-    // Subscribe to our tags.
-    // _.each(config.INSTAGRAM_TAGS.split(':'), function (tag) {
-    //   Instagram.subscriptions.subscribe({
-    //     object: 'tag',
-    //     object_id: tag,
-    //     aspect: 'media',
-    //     callback_url: config.INSTAGRAM_TAG_CALLBACK_URL,
-    //     verify_token: config.INSTAGRAM_VERIFY_TOKEN
-    //   });
-    // });
 
     util.log('Ready for instagrams.');
   },
