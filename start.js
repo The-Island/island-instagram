@@ -13,7 +13,6 @@ var config = {};
 _.each(require('./config.json'), function (v, k) {
   config[k] = process.env[k] || v;
 });
-console.log(config.INSTAGRAM_USER_CALLBACK_URL)
 
 Instagram.set('client_id', config.INSTAGRAM_CLIENT_ID);
 Instagram.set('client_secret', config.INSTAGRAM_CLIENT_SECRET);
