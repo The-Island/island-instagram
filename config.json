@@ -2,8 +2,8 @@
   "INSTAGRAM_CLIENT_ID": "b6e0d7d608a14a578cf94763f70f1b49",
   "INSTAGRAM_CLIENT_SECRET": "a3937ee32072457d92eaa2165bd7dd37",
   "INSTAGRAM_VERIFY_TOKEN": "weareinstaisland",
-  "INSTAGRAM_USER_CALLBACK_URL": "https://island.ngrok.com/api/instagrams/users",
-  "INSTAGRAM_TAG_CALLBACK_URL": "https://island.ngrok.com/api/instagrams/tags",
+  "INSTAGRAM_USER_CALLBACK_URL": "https://island.localtunnel.me/api/instagrams/users",
+  "INSTAGRAM_TAG_CALLBACK_URL": "https://island.localtunnel.me/api/instagrams/tags",
   "INSTAGRAM_TAGS": "weareisland:islandio",
   "INSTAGRAM_USER": "island_io"
 }
